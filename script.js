@@ -8,16 +8,6 @@ if (user) {
   container.appendChild(welcomeMessage);
 }
 
-// Adapter les couleurs au thème Telegram
-const theme = Telegram.WebApp.colorScheme; // light ou dark
-if (theme === "dark") {
-  document.body.style.backgroundColor = "#333";
-  document.body.style.color = "#fff";
-} else {
-  document.body.style.backgroundColor = "#f4f4f9";
-  document.body.style.color = "#333";
-}
-
 // Ajouter un bouton principal pour le partage
 Telegram.WebApp.MainButton.text = "Partager";
 Telegram.WebApp.MainButton.show();
