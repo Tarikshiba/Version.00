@@ -3,19 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mini App Telegram</title>
-  <!-- Lien vers le fichier CSS -->
+  <title>BOonseki - Ouverture</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Script Telegram Web App -->
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
-  <div class="container">
-    <h1>Bienvenue sur ma Mini App Telegram</h1>
-    <p>Explore les fonctionnalités interactives de cette Web App.</p>
-    <button id="closeApp">Fermer l'application</button>
+  <!-- Conteneur principal -->
+  <div class="video-container">
+    <video autoplay muted loop id="bg-video">
+      <source src="video.mp4" type="video/mp4">
+      Votre navigateur ne supporte pas les vidéos HTML5.
+    </video>
+    
+    <div class="welcome-message" id="welcome-message">
+      Bienvenue, <span id="user-name"></span> !
+    </div>
+    <button class="enter-btn hidden" id="enter-btn">ENTRER</button>
   </div>
-  <!-- Lien vers le fichier JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
