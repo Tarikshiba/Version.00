@@ -28,15 +28,20 @@
   padding: 10px 20px;
   border-radius: 8px;
   display: none; /* Masqué par défaut */
-  animation: scroll-open 1s forwards;
 }
 
-@keyframes scroll-open {
+.welcome-message.animate {
+  animation: slideIn 1.5s forwards;
+}
+
+@keyframes slideIn {
   from {
-    transform: scaleX(0);
+    transform: scaleY(0);
+    opacity: 0;
   }
   to {
-    transform: scaleX(1);
+    transform: scaleY(1);
+    opacity: 1;
   }
 }
 
